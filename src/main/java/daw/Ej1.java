@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package tarea5a;
+package daw;
 
 import java.util.Scanner;
 import javax.swing.JOptionPane;
@@ -17,22 +17,17 @@ public class Ej1 {
         int num = pedirEntero();
         System.out.println("El numero de palabras a introducir es: " + num + "\n");
 
-        String[] arrayPrincipal = rellenarArrayPalabras(num);
+        String[] arrayPalabras = rellenarArrayPalabras(num);
         System.out.println("\n**********Mostramos el array rellenado**********\n");
-        mostrarArray(arrayPrincipal);
+        mostrarArray(arrayPalabras);
 
         System.out.println("\n**********Mostramos el array con las palabras que tienen mas de 3 vocales**********\n");
-        String[] arrayMasVocales = PalabrasMasVocales(arrayPrincipal);
+        String[] arrayMasVocales = PalabrasMasVocales(arrayPalabras);
         mostrarArray(arrayMasVocales);
 
         System.out.println("\n**********Mostramos el array con las palabras que tienen menos de 3 vocales**********\n");
-        String[] arrayMenosVocales = PalabrasMenosVocales(arrayPrincipal);
+        String[] arrayMenosVocales = PalabrasMenosVocales(arrayPalabras);
         mostrarArray(arrayMenosVocales);
-
-        // Ej 2
-        System.out.println("\n\n");
-        System.out.println("\n********************PRUEBA EJ 2********************\n");
-        int[] arrayPosiciones = buscarCaracteres(arrayPrincipal, 'o');
 
     }
 
@@ -139,31 +134,4 @@ public class Ej1 {
         return arrayMasVocales;
     }
 
-    /**
-     * ***********************************************************************
-     */
-    // Metodos del Ej2
-    public static int[] buscarCaracteres(String[] array, char letra) {
-        // Creo un array para meter las posiciones donde estan las letras que buscamos.
-        int[] arrayNuevo = new int[array.length];
-        String palabra = "";
-        // Recorro el array
-
-        for (int i = 0; i < array.length; i++) {
-            //
-            int posicion = -1;
-            palabra = array[i].toLowerCase();
-            for (int j = 0; j < palabra.length(); j++) {
-                // si la letra que quiero buscar la tiene esa posicion del array, me quedo con la posicion de donde esta y de donde esta la letra y lo guardo
-                if (palabra.charAt(j) == letra) {
-                    //Doy por hecho que esa letra no está en la palabra, y si se da el caso de que si está, ya le cambio el valor
-                    posicion = j;
-                    break;
-                }
-            }
-            System.out.println("La " + letra + " dentro de la palabra " + array[i] + " está en la posición " + posicion);
-            arrayNuevo[i] = posicion;
-        }
-        return arrayNuevo;
-    }
 }

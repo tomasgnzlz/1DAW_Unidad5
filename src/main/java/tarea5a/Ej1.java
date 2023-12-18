@@ -153,6 +153,8 @@ public class Ej1 {
             //
             int posicion = -1;
             palabra = array[i].toLowerCase();
+            // Me ahorro todo lo de abajp
+            //arrayNuevo[i] = array[i].indexOf(letra); 
             for (int j = 0; j < palabra.length(); j++) {
                 // si la letra que quiero buscar la tiene esa posicion del array, me quedo con la posicion de donde esta y de donde esta la letra y lo guardo
                 if (palabra.charAt(j) == letra) {

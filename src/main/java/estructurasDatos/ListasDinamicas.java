@@ -5,6 +5,7 @@
 package estructurasDatos;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
@@ -38,42 +39,42 @@ public class ListasDinamicas {
         // Cambiar un elemento de la lista
         lista.set(3, 7);
         System.out.println(lista);
-        
-        
-        if (lista.isEmpty()) {
-            System.out.println("La lista está vacia");
-        }else{
-            System.out.println("La lista no está vacia");
-        }
-        
-        
-        System.out.println("La lista contiene el elemento 100? " + lista.contains(100));
-        System.out.println("Posición donde está el elemento 7: " + lista.indexOf(7));
-        System.out.println("Borro el elemento: " +  lista.remove(0));
-        System.out.println(lista);
-        //lista.remove(Integer.valueOf(20));
-        lista.remove(lista.indexOf(20));
-        System.out.println(lista);
-        System.out.println("-----------------------------Formas de recorrer la lista----------------------------------------------------------------");
-        for (int i = 0; i < lista.size(); i++) {
-            System.out.print(lista.get(i) + " ");
-        }
-        System.out.println("\n");
-        for (Integer integer : lista) {
-            System.out.println("Numero: " + integer);
-        }
-        System.out.println("\n");
-        
-        // Recorrido con iterador
-        Iterator<Integer> it = lista.iterator();
-        while (it.hasNext()) {
-            System.out.println("num: "+it.next());
-        }
-        System.out.println("-----------------------------------------------------------------------------------------------------------");
-        // Expresion lambda y api Stream
-        lista.forEach(e->System.out.println(e));    
-        
-        
+//        
+//        
+//        if (lista.isEmpty()) {
+//            System.out.println("La lista está vacia");
+//        }else{
+//            System.out.println("La lista no está vacia");
+//        }
+//        
+//        
+//        System.out.println("La lista contiene el elemento 100? " + lista.contains(100));
+//        System.out.println("Posición donde está el elemento 7: " + lista.indexOf(7));
+//        System.out.println("Borro el elemento: " +  lista.remove(0));
+//        System.out.println(lista);
+//        //lista.remove(Integer.valueOf(20));
+//        lista.remove(lista.indexOf(20));
+//        System.out.println(lista);
+//        System.out.println("-----------------------------Formas de recorrer la lista----------------------------------------------------------------");
+//        for (int i = 0; i < lista.size(); i++) {
+//            System.out.print(lista.get(i) + " ");
+//        }
+//        System.out.println("\n");
+//        for (Integer integer : lista) {
+//            System.out.println("Numero: " + integer);
+//        }
+//        System.out.println("\n");
+//        
+//        // Recorrido con iterador
+//        Iterator<Integer> it = lista.iterator();
+//        while (it.hasNext()) {
+//            System.out.println("num: "+it.next());
+//        }
+//        System.out.println("-----------------------------------------------------------------------------------------------------------");
+//        // Expresion lambda y api Stream
+//        lista.forEach(e->System.out.println(e));    
+//        
+//        
         
         
         

@@ -83,7 +83,6 @@ public class Barajas {
     public void sacar(int numCartas) {
         Random rd = new Random();
         int num;
-
         for (int i = 0; i < numCartas; i++) {
             num = rd.nextInt(1, 40);
             System.out.println("Se ha eliminado: " + listaNaipes.get(num));

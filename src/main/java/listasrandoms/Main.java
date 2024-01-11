@@ -42,7 +42,17 @@ public class Main {
 
         System.out.println("*************** NUEVA LISTA CON LAS LETRAS DE L1 QUE NO ESTÁN EN L2 ***************");
         ArrayList<String> l3 = new ArrayList<>();
+        //-*-*-*-*-**-**-*-**-*--*--*-
+        // Otra manera de hacerlo es con el remove all
+        // este metodo coge l3 y quita todos los valores de la lista que yo le paso
+        // en este caso, cogo l3 y l2, y quito de l3 aquellas letras que esten tambien en l2;
+        //asi solo se quedan las que no están en l3;
 
+        //l3 = l1;
+        //mostrarListas(l3);
+        //l3.removeAll(l2);
+        //mostrarListas(l3);
+        //-*-*-*-*-**-**-*-**-*--*--*-
         for (int i = 0; i < l1.size(); i++) {
             // se resetea la variable para que compare correctamente las letras de ambas listas
             boolean esta = false;

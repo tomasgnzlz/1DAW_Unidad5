@@ -43,6 +43,7 @@ public class CatalogoLibro {
         System.out.println("\n*****************LISTA ORDENADA POR NUMPAGINAS*****************\n");
         Collections.sort(lista, (k1,k2)->Integer.compare(k1.getNumPaginas(), k2.getNumPaginas()));
         lista.forEach(System.out::println);
+        //
         
         
     }

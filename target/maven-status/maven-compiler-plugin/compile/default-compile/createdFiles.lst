@@ -1,5 +1,6 @@
-matrices/EjemploMatriz.class
-alumnos/Alumno.class
-alumnos/CatalogoAlumnos.class
-comparator/CatalogoLibro.class
-comparator/Libro.class
+matrices\EjMatriz.class
+alumnos\Alumno.class
+comparator\CatalogoLibro.class
+alumnos\CatalogoAlumnos.class
+comparator\Libro.class
+matrices\EjemploMatriz.class

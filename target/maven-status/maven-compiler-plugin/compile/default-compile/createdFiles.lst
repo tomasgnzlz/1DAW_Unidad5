@@ -2,6 +2,8 @@ matrices\EjMatriz.class
 alumnos\Alumno.class
 comparator\CatalogoLibro.class
 alumnos\CatalogoAlumnos.class
+matrices\Celda.class
 comparator\Libro.class
+matrices\MAin.class
 matrices\EjerciciosSumasMatrices.class
 matrices\EjemploMatriz.class

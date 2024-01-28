@@ -4,6 +4,10 @@ comparator\CatalogoLibro.class
 alumnos\CatalogoAlumnos.class
 matrices\Celda.class
 comparator\Libro.class
+matrizAutobus\Estado.class
 matrices\MAin.class
-matrices\EjerciciosSumasMatrices.class
 matrices\EjemploMatriz.class
+matrizAutobus\Asiento.class
+matrizAutobus\Main.class
+matrizAutobus\Autobus.class
+matrices\EjerciciosSumasMatrices.class

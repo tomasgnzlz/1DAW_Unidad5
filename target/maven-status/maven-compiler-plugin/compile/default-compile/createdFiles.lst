@@ -8,6 +8,7 @@ matrizAutobus\Estado.class
 matrices\MAin.class
 matrices\EjemploMatriz.class
 matrizAutobus\Asiento.class
+matrizAdyacente\Adyacentes.class
 matrizAutobus\Main.class
 matrizAutobus\Autobus.class
 matrices\EjerciciosSumasMatrices.class

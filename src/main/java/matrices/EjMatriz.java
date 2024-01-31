@@ -65,7 +65,6 @@ public class EjMatriz {
                 System.out.print(arrayBidimensional[i][j] + " ");
             }
         }
-
     }
 
 }

@@ -131,7 +131,6 @@ public class Adyacentes {
         }
         // Enseño la lista de numeros adyacentes al que le paso como parametro.
         listaNumeros.forEach(System.out::println);
-
     }
 
 }
